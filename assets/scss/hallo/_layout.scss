@@ -3,6 +3,8 @@
 }
 
 main {
+    display: block;
+
     .block {
         display: flex;
     }
@@ -12,8 +14,17 @@ main {
         min-height: calc(100vh - 20vh);
     }
 
+    .introduction.right {
+	flex-grow: 1.4;
+    }
+
     .column.left {
         text-align: end;
+    }
+	
+	.column.left.lr {
+        text-align: start;
+		padding-right: 32px;
     }
 
     .column.right {

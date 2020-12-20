@@ -26,7 +26,9 @@
 
     {{- if (fileExists "layouts/partials/content.html") -}}
         <div class="block">
-            <div class="column left"></div>
+            <div class="column left lr">
+			    {{- partial "content_left.html" . -}}
+			</div>
             <div class="column right">
                 {{- partial "content.html" . -}}
             </div>
